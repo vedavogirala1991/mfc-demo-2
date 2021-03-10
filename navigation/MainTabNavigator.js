@@ -61,7 +61,7 @@ routeConfigs.Settings.navigationOptions.tabBarIcon.propTypes = {
 
 const tabNavigatorConfig = {
   navigationOptions: {
-    header: null
+    headerShown: false
   },
   defaultNavigationOptions: {
     bounces: true
@@ -135,8 +135,9 @@ const MainNavigator = createStackNavigator(
       }
     }
   },
-  { navigationOptions : {
-    headerTitleAlign: 'center'
+  {
+    navigationOptions : {
+      headerTitleAlign: 'center'
     }
   }
 );
